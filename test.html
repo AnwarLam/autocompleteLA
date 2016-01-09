@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+    <head>
+        <title>Test d'autocompletion</title>
+        <!--link rel="stylesheet" type="text/css" href="autoComplete.css"-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="autoCompleteLA.js"></script>
+        <style type="text/css">
+            pre{
+                background-color: #777;
+            }
+        </style>
+    </head>
+    <body>
+            <p>entrez le nom d'un sayen:</p>
+            <p>enter name of sayen:</p>
+            <input type="text" name="champ-texte" id="champ-texte" size="20" />
+            <input type="submit" id="bouton-submit">
+            <p>code:</p>
+            <pre>
+
+                &lt;input type="text" name="champ-texte" id="champ-texte" size="20" /&gt;
+                var tabCommand = ['sangoku','raditz','sangohan','baddack','sangoten','nappa','vegeta','trunk','bra','thales','broly','Paragus'];
+                   $(document).ready(function()
+                    {
+                        autoCompletion('champ-texte',tabCommand);
+                    });
+
+            </pre>
+        <script type="text/javascript">
+        var tabCommand = ['sangoku','raditz','sangohan','baddack','sangoten','nappa','vegeta','trunk','bra','thales','broly','Paragus'];
+       $(document).ready(function()
+        {
+            autoCompletion('champ-texte',tabCommand);
+        });
+
+        </script>
+    </body>
+</html>
